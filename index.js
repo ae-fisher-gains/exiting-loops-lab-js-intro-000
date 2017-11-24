@@ -24,11 +24,14 @@ function keepGoing (array, changeValue, skipValue) {
 
 function findBy (array, findFn) {
   for (var i = 0; i <= array.length; i++) {
-    if (array[i] === findFn) {
+    var j = findFn
+    if (array[i] === j) {
       return array[i]
-    } else if (array[i] !== findFn && i < array.length) {
+    }
+     else if (array[i] !== j && i < array.length) {
       continue
-    } else if (array[i] !== findFn && i === array.length) {
+    }
+    else if (array[i] !== j && i === array.length) {
       return null
     }
   }
