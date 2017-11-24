@@ -24,13 +24,13 @@ function keepGoing (array, changeValue, skipValue) {
 
 function findBy (array, findFn) {
   for (var i = 0; i <= array.length; i++) {
-    if (array[i] === c) {
+    if (array[i] === findFn) {
       return array[i]
     }
-     else if (array[i] !== c && i < array.length) {
+     else if (array[i] !== findFn && i < array.length) {
       continue
     }
-    else if (array[i] !== c && i === array.length) {
+    else if (array[i] !== findFn && i === array.length) {
       return null
     }
   }
