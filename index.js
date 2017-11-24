@@ -23,12 +23,9 @@ function keepGoing (array, changeValue, skipValue) {
 }
 
 function findBy (array, findFn) {
-  var x = findFn()
   for (var i = 0; i <= array.length; i++) {
-    if (array[i] === x) {
+    if (findFn(array[i])) {
       return array[i]
-    }
-     else if (array[i] !== x && i < array.length) {
     }
     else {
       return null
