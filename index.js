@@ -24,10 +24,10 @@ function keepGoing (array, changeValue, skipValue) {
 
 function findBy (array, findFn) {
   for (var i = 0; i <= array.length; i++) {
-    if (findFn(array[i])) {
+    var x = array[i]
+    if (findFn(x)) {
       return array[i]
-    }
-    else {
+    } else {
       return null
     }
   }
