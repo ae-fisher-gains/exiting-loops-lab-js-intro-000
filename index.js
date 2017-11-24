@@ -1,9 +1,10 @@
 function breakOut (array, changeValue, stopValue) {
   for (i = 0; i < array.length; i++) {
-    if (array[i] !== stopValue) {
-      array[i] = changeValue
+    var j = i
+    if (array[j] !== stopValue) {
+      array[j] = changeValue
     }
-    else if (array[i] === stopValue) {
+    else if (array[j] === stopValue) {
       break
     }
   }
